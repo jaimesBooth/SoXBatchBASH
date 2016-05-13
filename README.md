@@ -1,22 +1,26 @@
 SoXBatchBASH
 ============
-Version 20160402
+Version 20160513
 
 [//]: # (## Description (Elevator Statement))
 
-BASH script to batch convert audio files down to CD standard audio (44.1 kHz, 16 bit) using [SoX's](http://sox.sourceforge.net/ "SoX's Homepage") very high quality sample rate converter. Any readable audio files in the SoXBatchBASHInput/ directory are processed and saved to the SoXBatchBASHOutput/ directory.
+BASH script to batch convert audio files to CD standard audio (44.1 kHz, 16 bit) using [SoX's](http://sox.sourceforge.net/ "SoX's Homepage") very high quality sample rate converter. Any readable audio files in the SoXBatchBASHInput/ directory are processed and saved to the SoXBatchBASHOutput/ directory.
 
-SoX offers a Free and often better quality re-sampling algorithm than some commercial digital audio processing software.
+
+## Rational
+Sample rate conversion comparisons by [Infinite Wave](http://src.infinitewave.ca/ "SRC Comparison Infinite Wave") suggest that the open-source SoX often offers a better quality re-sampling algorithm than some of the commercial digital audio processing software.
+
+![alt text](http://src.infinitewave.ca/images/Sweep/SoX14_VHQ_LP.png "Sweep SoX_VHQ_LP courtesy of Infinite Wave")
+
 
 [//]: # (## New and special in this release)
 
-Script uses SoX's linear phase (on by default, -L flag) very high quality sample rate conversion (-v flag). Adds dither with noise shaping (-s flag) to avoid audible quantization noise due to bit depth reduction to 16 bit.
+This script uses SoX's linear phase (on by default, -L flag) very high quality sample rate conversion (-v flag). Dither with noise shaping (-s flag) is added to avoid audible quantisation noise due to bit depth reduction to 16 bit.
 
-@TODO link to graphs or include graph in doc.
 
 ## Requirements
 [//]: # (Hardware and software requirements)
-Computer running (Debian based) Linux with [SoX](http://sox.sourceforge.net/ "SoX's Hompage") installed. BASH shell installed to `/bin/bash`.
+Computer running (Debian based) Linux with [SoX](http://sox.sourceforge.net/ "SoX's Homepage") installed. BASH shell installed to `/bin/bash`.
 
 Tested using SoX v14.4.1, GNU bash v4.3.11(1) and Ubuntu 14.04 x64.
 
@@ -40,7 +44,7 @@ Tested using SoX v14.4.1, GNU bash v4.3.11(1) and Ubuntu 14.04 x64.
 3. Download the SoXBatchBASH project from the GitHub repository.
 
   ```bash
-  git clone https://github.com/JaimesBooth/@TODO
+  git clone https://github.com/jaimesBooth/SoXBatchBASH
   ```
 
 4. Change working directory to the SoXBatchBASH directory containing the script:
@@ -75,22 +79,26 @@ Tested using SoX v14.4.1, GNU bash v4.3.11(1) and Ubuntu 14.04 x64.
 
 [//]: # (## Important known problems)
 
-## Version history
+## Version History
 
 |Version        | Description     |
 | :----------:  | :-------------: |
+|20160513    | README improvements. Addidtion of sweep image. |
 |20160402     | README improvements. |
 |20160331     | First README version. |
 |< 20160331   | Initial Script development. |
 
 [//]: # (## Pricing information)
 
-## Contact information
+## Contact Information
 
 [//]: # (## Date or copyright date, and other legal information)
 [//]: # (## License)
 
-Copyright 2016 Jaimes Booth. Monkey Sea, Monkey Dew Software.
+Copyright 2016 [Jaimes Booth](http://nz.linkedin.com/in/jaimesbooth "Jaimes Booth on LinkedIn").
+
+
+Licensed under an [GNU General Public License](https://gnu.org/licenses/gpl.html "GNU General Public License").
 
 This program is free software. You can redistribute it and/or modify it under the terms of the [GNU General Public License](https://gnu.org/licenses/gpl.html "GNU General Public License") as published by the Free Software Foundation. Either version 2, or (at your option) any later version.
 
