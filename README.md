@@ -83,7 +83,7 @@ Tested using SoX v14.4.1, GNU bash v4.3.11(1) and Ubuntu 14.04 x64.
 
 |Version        | Description     |
 | :----------:  | :-------------: |
-|20160513    | README improvements. Addidtion of sweep image. |
+|20160513    | README improvements. Addition of sweep image. |
 |20160402     | README improvements. |
 |20160331     | First README version. |
 |< 20160331   | Initial Script development. |
